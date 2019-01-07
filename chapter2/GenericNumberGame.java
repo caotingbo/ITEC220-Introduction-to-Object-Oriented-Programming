@@ -63,7 +63,14 @@ public class GenericNumberGame {
 
         Integer[] numbers = {-1, -2, 3, -4, -5, 9, 10, 11};
         Double[] doubleNumbers= {-1.2, -2.5, 133.3, -40.4, -5.98765, 6.392, 16.6666, 28.3672684, 77.7777};
-        
+        Date[] dateNumbers = {
+            new Date(2018, 12, 25),
+            new Date(2019, 01, 01),
+            new Date(2019, 01, 02),
+            new Date(2018, 05, 01),
+            new Date(2011, 04, 11),
+            new Date(2019, 01, 06)
+        };
         String[] stringNumbers = {
             "01/01/2019", 
             "08/31/2011", 
@@ -83,14 +90,14 @@ public class GenericNumberGame {
 
         scanMaxAndMin(numbers);
         scanMaxAndMin(doubleNumbers);
-        //scanMaxAndMin(dateNumbers);
+        scanMaxAndMin(dateNumbers);
 
         scanFirstTwoMaxs(numbers);
         scanFirstTwoMaxs(doubleNumbers);
-        //scanFirstTwoMaxs(dateNumbers);
+        scanFirstTwoMaxs(dateNumbers);
 
         scanFirstThreeMaxs(numbers);
         scanFirstThreeMaxs(doubleNumbers);
-        //scanFirstThreeMaxs(dateNumbers);
+        scanFirstThreeMaxs(dateNumbers);
     }
 }
